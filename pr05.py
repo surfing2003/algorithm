@@ -647,3 +647,31 @@
 
 # for _ in range(M):
 #     print(site[input()])
+
+# # 메모리 초과. 흠.. 
+# import sys
+# input = lambda : sys.stdin.readline().rstrip()
+
+# N = int(input())
+# temp = [0] * 10001
+
+# for _ in range(N):
+#     temp[int(input())] += 1
+
+# for i in range(1,10001):
+#     if temp[i] != 0 :
+#         print(f'{i}\n' * temp[i], end='')
+
+# # 통과.
+# import sys
+# input = lambda : sys.stdin.readline().rstrip()
+
+# n = int(input())
+# b = [0]*10001
+# for _ in range(n):
+#     b[int(input())] += 1
+
+# for i in range(10001):
+#     if b[i] != 0:
+#         for _ in range(b[i]):
+#             print(i)
