@@ -735,3 +735,8 @@
 # ans = list(set(ans)) #중복이 있을수 있으니 제거
 # ans.sort()
 # print(*ans)
+
+
+r1, s = map(int,input().split())
+answer = 2*s - r1
+print(f'{answer}')
