@@ -763,3 +763,22 @@
 # print(True if value % 2 == 0 else False)
 # value = 3
 # print(True if value % 2 == 0 else False)
+
+
+# for i in range(10):
+#     print(i)
+# else:
+#     print("EOP")
+
+# i = 0
+# while i < 10:
+#     print(i)
+#     i += 1
+# else:
+#     print("EOP")
+
+
+# reversed_s = ""
+# for i in "I love you":
+#     reversed_s = i + reversed_s    
+#     print(reversed_s)
