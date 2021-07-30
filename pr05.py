@@ -782,3 +782,29 @@
 # for i in "I love you":
 #     reversed_s = i + reversed_s    
 #     print(reversed_s)
+
+
+# def docstring_example1(a,b):
+#     """[summary]
+
+#     Args:
+#         a ([type]): [description]
+#         b ([type]): [description]
+
+#     Returns:
+#         [type]: [description]
+#     """    
+#     return a+b
+
+# def docstring_example(a: int, b: int) -> int:
+#     """[summary]
+
+#     Args:
+#         a (int): [description]
+#         b (int): [description]
+
+#     Returns:
+#         int: [description]
+#     """    
+#     return a+b
+    
