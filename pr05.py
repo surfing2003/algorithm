@@ -758,3 +758,8 @@
 #         if answer[j] != temp[j]:
 #             answer[j] = '?'
 # print(''.join(answer))
+
+# value = 2
+# print(True if value % 2 == 0 else False)
+# value = 3
+# print(True if value % 2 == 0 else False)
