@@ -839,3 +839,23 @@
 #                     return (k+1)**2
 #     return 1
 # print(find_answer())
+
+# import math
+# N, L = map(int,input().split())
+
+# water = [list(map(int,input().split())) for _ in range(N)]
+# water.sort(key=lambda x: x[0])
+
+# answer = 0
+# max_index = 0
+
+# for s,e in water:
+#     if s <= max_index:
+#         s = max_index + 1
+#         if e <= s:
+#             continue
+    
+#     temp = math.ceil((e-s)/L)
+#     answer += temp
+#     max_index = max(max_index,s+temp*L-1)
+# print(answer)
