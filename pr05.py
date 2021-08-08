@@ -865,3 +865,39 @@
 # for _ in range(N):
 #     temp = input()
 #     print(temp[0].upper()+temp[1:])
+
+# t = input()
+# p = input()
+
+# lt = len(t)
+# lp = len(p)
+
+# pos = []
+# power = 1
+
+# t_hash = 0
+# p_hash = 0
+# for i in range(lt-lp+1):
+#     if i == 0:
+#         for j in range(lp):
+#             t_hash += ord(t[lp-1-j])*power
+#             p_hash += ord(p[lp-1-j])*power
+#             if j < lp-1 :
+#                 power *= 2
+#             print(t[lp-1-j],ord(t[lp-1-j]),t_hash,p[lp-1-j],ord(p[lp-1-j]),p_hash)
+#     else:
+#         t_hash = 2 * (t_hash - (ord(t[i-1])*power)) + ord(t[lp-1+i])
+#     print(t_hash,p_hash)
+#     if p_hash == t_hash:
+#         flag = True
+#         for j in range(lp):
+#             print(t[i+j],p[j])
+#             if t[i+j] != p[j]:
+#                 flag = False
+#                 break
+#         if flag:
+#             pos.append(i+1)
+
+# print(len(pos))
+# print(*pos)
+
