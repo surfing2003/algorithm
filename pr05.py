@@ -861,3 +861,7 @@
 # print(answer)
 
 # print(''.join([i for i in input() if i.isupper()]))
+# N = int(input())
+# for _ in range(N):
+#     temp = input()
+#     print(temp[0].upper()+temp[1:])
