@@ -1015,3 +1015,37 @@
 #                 break
 #     else:
 #         break
+
+## 코드 이해해보자.
+# import re
+
+# TITLE = re.compile(r'<div title="([^"]+)">')
+# P = re.compile(r'<p>')
+# ELIMINATE = re.compile(r'<[^<]+>')
+# SPACES = re.compile(' +')
+
+# def solve(s):
+#     s = TITLE.sub('\ntitle : \\1', s)
+#     print("1",s)
+#     s = P.sub('\n', s)
+#     print("2",s)
+#     s = ELIMINATE.sub('', s)
+#     print("3",s)
+#     s = SPACES.sub(' ', s)
+#     print(s.strip())
+
+# solve(input())
+
+# import sys
+# import heapq
+# input = lambda: sys.stdin.readline().rstrip()
+
+# numbers = int(input())
+# heap = []
+
+# for _ in range(numbers):
+#     num = int(input())
+#     if num != 0:
+#         heapq.heappush(heap, num)
+#     else:
+#         print(heapq.heappop(heap) if heap else 0)
