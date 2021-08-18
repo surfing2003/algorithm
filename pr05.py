@@ -1036,16 +1036,32 @@
 
 # solve(input())
 
+# 1927 heap 풀이
 # import sys
 # import heapq
 # input = lambda: sys.stdin.readline().rstrip()
 
-# numbers = int(input())
+# n = int(input())
 # heap = []
 
-# for _ in range(numbers):
+# for _ in range(n):
 #     num = int(input())
 #     if num != 0:
 #         heapq.heappush(heap, num)
 #     else:
 #         print(heapq.heappop(heap) if heap else 0)
+
+
+# 시간초과? 그냥 heap을 쓰는게 효율적인가.
+# import sys
+# from queue import PriorityQueue
+# input = lambda: sys.stdin.readline().rstrip()
+# p_q = PriorityQueue()
+
+# n = int(input())
+# for _ in range(n):
+#     num = int(input())
+#     if num != 0:
+#         p_q.put(num)
+#     else:
+#         print(p_q.get() if p_q else 0)
