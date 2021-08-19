@@ -1066,16 +1066,15 @@
 #     else:
 #         print(p_q.get() if p_q else 0)
 
-import sys
-import heapq
-input = lambda : sys.stdin.readline().rstrip()
+# import sys
+# import heapq
+# input = lambda : sys.stdin.readline().rstrip()
 
-N = int(input())
-heap = []
-for _ in range(N):
-    num = int(input())
-    if num != 0:
-        heapq.heappush(heap,(abs(num),num))
-    else:
-        print(heapq.heappop(heap)[1] if heap else 0)
-        
+# N = int(input())
+# heap = []
+# for _ in range(N):
+#     num = int(input())
+#     if num != 0:
+#         heapq.heappush(heap,(abs(num),num))
+#     else:
+#         print(heapq.heappop(heap)[1] if heap else 0)
