@@ -1078,3 +1078,56 @@
 #         heapq.heappush(heap,(abs(num),num))
 #     else:
 #         print(heapq.heappop(heap)[1] if heap else 0)
+
+# import sys
+# import heapq
+# input = lambda : sys.stdin.readline().rstrip()
+
+# ## 실패
+# N = int(input())
+# arr = []
+# for _ in range(N):
+#     arr += list(map(lambda x: int(x)*(-1) ,input().split()))
+# arr.sort(reverse=True)
+# print(arr[N-1])
+
+# ## 실패
+# heapq.heapify(arr)
+# answer = 0
+# for _ in range(N):
+#     answer = heapq.heappop(arr)
+# print(answer*-1)
+
+# import sys
+# import heapq
+# input = lambda : sys.stdin.readline().rstrip()
+
+# ## 성공
+# # N = int(input())
+# # heap = []
+# # for _ in range(N):
+# #     for s in map(int,input().split()):
+# #         if len(heap) < N:
+# #             heapq.heappush(heap,s)
+# #         else:
+# #             if heap[0] < s:
+# #                 heapq.heappush(heap,s)  
+# #                 heapq.heappop(heap)
+# #         print(heap)
+# # print(heap[0])
+
+# ## 성공 살짝 수정
+# N = int(input())
+# heap = []
+# for _ in range(N):
+#     temp = list(map(int,input().split()))
+#     if not heap:
+#         heap = temp
+#         heapq.heapify(heap)
+#     else:
+#         for t in temp:
+#             if heap[0] < t:
+#                 heapq.heappop(heap)
+#                 heapq.heappush(heap,t)
+#     print(heap, temp)
+# print(heap[0])
