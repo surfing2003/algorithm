@@ -1131,3 +1131,53 @@
 #                 heapq.heappush(heap,t)
 #     print(heap, temp)
 # print(heap[0])
+
+#####
+
+import queue
+import sys
+input = lambda : sys.stdin.readline().rstrip()
+
+n,m,v = map(int,input().split())
+node_graph = [list() for _ in range(n+1)]
+
+for _ in range(m):
+    x, y = map(int,input().split())
+    node_graph[x].append(y)
+    node_graph[y].append(x)
+
+for x in node_graph:
+    x.sort()
+
+# for x in node_graph:
+#     print(x)
+
+# dfs_node
+chk = [False] * (n+1)
+def dfs_node(node):
+    chk[node] = True
+    print(node,end = " ")
+    for next in node_graph[node]:
+        if not chk[next]:
+            dfs_node(next)
+    
+dfs_node(v)
+print()
+
+# bfs_node
+chk = [False] * (n+1)
+def bfs_node(start):
+    q = queue.Queue()
+    q.put(start)
+    chk[start] = True
+
+    while not q.empty():
+        now = q.get()
+        print(now,end = " ")
+        for next_n in node_graph[now]:
+            if not chk[next_n]:
+                chk[next_n] = True
+                q.put(next_n)
+
+bfs_node(v)
+print()
