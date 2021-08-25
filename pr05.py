@@ -1213,6 +1213,8 @@
 
 # N = int(input())
 # p = "^"+'.*'.join(input().split('*'))+"$"
+# p = "^"+input().replace('*','.*')+"$"
+
 
 # for _ in range(N):
 #     print(p)
