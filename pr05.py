@@ -1218,4 +1218,28 @@
 #     print(p)
 #     print( "DA" if re.findall(p,input()) else "NE")
 
-        
+## today F7
+# import sys
+# input = lambda : sys.stdin.readline().rstrip()
+
+# N = int(input())
+# M = int(input())
+
+# arr = [list() for _ in range(N+1)]
+# for _ in range(M):
+#     i,j = map(int,input().split())
+#     arr[i].append(j)
+#     arr[j].append(i)
+
+# chk = [False] * (N+1)
+# answer = []
+
+# def dfs(node):
+#     chk[node] = True
+#     answer.append(node)
+#     for next in arr[node]:
+#         if not chk[next]:
+#             dfs(next)
+
+# dfs(1)
+# print(len(answer)-1)
